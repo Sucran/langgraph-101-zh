@@ -34,6 +34,8 @@
    - Deep Agents 还需 `TAVILY_API_KEY`（[Tavily](https://tavily.com)）。
 4. 运行后续单元格。默认 LLM 在 `utils/models.py` 中配置为 **Anthropic `claude-haiku-4-5`**；换供应商请改该文件（与上游说明一致）。
 
+若仍出现 `ModuleNotFoundError: No module named 'utils'`：Colab **运行时 → 断开连接并删除运行时**，从 GitHub 链接重新打开 notebook，依次运行 **Colab 一键环境** 与 **导入 `utils.models`** 单元格。
+
 本地完整 clone 本仓库时，可在项目根目录用 Jupyter 打开 notebook；仍建议先运行一键环境单元格（或自行 `pip install`），路径逻辑同时支持本地与 Colab。
 
 ## 本地开发
